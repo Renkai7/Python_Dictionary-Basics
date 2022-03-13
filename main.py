@@ -22,6 +22,41 @@ programming_dictionary["Bug"] = "A moth in your computer."
 # print(programming_dictionary)
 
 # Loop through a dictionary
-for key in programming_dictionary:
-  print(key)
-  print(programming_dictionary[key])
+# for key in programming_dictionary:
+#   print(key)
+#   print(programming_dictionary[key])
+
+#############################
+
+# Nesting
+capitals = {
+  "France": "Paris",
+  "Germany": "Berlin",
+}
+
+# Nesting a List in a Dictionary
+
+# travel_log = {
+#   "France": ["Paris", "Lille", "Dijon"],
+#   "Germany": ["Berlin", "Hamburg", "Stuttgart"],
+# }
+
+# Nesting Dictionary in a Dictionary
+travel_log = {
+  "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits": 12},
+  "Germany": {"best_food": ["Berlin", "Hamburg", "Stuttgart"], "dishes_eaten": 7},
+}
+
+# Nesting Dictionary in a List
+travel_log = [
+  {
+    "country": "France",
+    "cities_visited": ["Paris", "Lille", "Dijon"],
+    "total_visits": 12
+  },
+  {
+    "country": "Germany",
+    "best_food": ["Berlin", "Hamburg", "Stuttgart"], 
+    "dishes_eaten": 7
+  },
+]
